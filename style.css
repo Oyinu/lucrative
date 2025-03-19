@@ -118,7 +118,7 @@ header button:hover {
         justify-content: center; /* Center both items */
         flex-wrap: wrap; /* Ensure responsiveness */
         gap: 20px; /* Space between text and image */
-    
+
           
         
     }
@@ -131,13 +131,12 @@ header button:hover {
     
     .hero-img {
         flex: 1;
-        max-width: 70%;
-    
+        max-width: 140%;
+
     }
     
     .hero-img img {
-        width: 100%; /* Ensure image takes up full container */
-
+        width: 70%; /* Ensure image takes up full container */
     }
     
 .hero-text{
@@ -145,7 +144,6 @@ header button:hover {
 
 }
 .lucrative-token{
-    width:120%;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.7s ease-out, transform 0.7s ease-out;
@@ -835,6 +833,9 @@ nav a {
 .hero button {
     padding: 8px 16px;
     font-size: 1rem;
+}
+.hero-img{
+ margin-right: 10%;
 }
 
 .roadmap, .tokenomics, .vision {
