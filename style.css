@@ -513,7 +513,7 @@ header button:hover {
 .download-button {
     position: relative;
     border-width: 0;
-    color: rgb(19, 19, 19);
+    color:white;
     font-size: 15px;
     font-weight: 600;
     border-radius: 4px;
@@ -531,7 +531,7 @@ header button:hover {
     border-radius: 4px;
     z-index: 1;
     background-color: #ffffff;
-    border: solid 1px #e8e8e82d;
+    border: solid 1px white;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   }
   #community h2{
@@ -907,6 +907,30 @@ label{
     width: 60%;
     margin-left: 40%;
 }
+.download-button {
+    position: relative;
+    border-width: 0;
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  #liquidity-pool .text a, .solscan .text2 span{
+    font-family: Michroma;
+    color: black;
+    font-size: 1em;
+    margin-top: 20px;
+ 
+  }
+  #liquidity-pool, .solscan {
+    width: 90%; /* Increase width for better mobile fit */
+    font-size: 0.9rem; /* Adjust font size for mobile */
+    padding: 0.8rem; /* Reduce padding */
+}
+
+
 }
 
 
