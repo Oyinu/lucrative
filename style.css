@@ -397,12 +397,15 @@ header button:hover {
     font-size: 2.5em;
     margin-bottom: 30px;
 }
+.token-info{
+    padding: 2rem;
+}
 #token-info p {
     font-size: 1.2em;
     margin-bottom: 20px;
 }
 /* From Uiverse.io by satyamchaudharydev */ 
-#liquidity-pool, .solscan {
+#liquidity-pool, .solscan, .download-button{
     width:330px;
     height: 56px;
     overflow: hidden;
@@ -415,70 +418,28 @@ header button:hover {
     display: flex;
     align-items: center;
     justify-self: center;
-   
     background-color: white;
     border-radius: 6px;
   }
-  
-  
-  #liquidity-pool:before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    background: currentColor;
-    transition: transform 0.25s ease-out;
-  }
-  #raydium-link{
+  .Btn{
+    width:400px;
+    height: 56px;
+    overflow: hidden;
+    border: none;
     color: black;
-    padding: 1rem .5rem;
-
-    margin-left: 10%;
-  }
-  #liquidity-pool:hover:before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  #liquidity-pool .text a, .solscan .text2 span{
-    font-family: Michroma;
-    color: black;
-    font-size: 1.2em;
-    margin-top: 20px;
- 
-  }
-  .solscan .text2 span{
-    text-align: center;
-    padding: 0 1rem;
-  }
-  .solscan .text2 a span{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding:.5rem 1rem;
-    font-weight: 500;
-    
-  }
-/* From Uiverse.io by vinodjangid07 */ 
-.Btn {
+    background: none;
+    position: relative;
+    padding: 1rem;
+    cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px;
-    background: white;
-    border: 2px solid black;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
-    position: relative;
-    font-family:Michroma ;
-    border-radius: 5px;
-    margin-left: 25%;
+    justify-self: center;
+    background-color: white;
+    border-radius: 6px;
+  }
+.new{
+    padding: auto 2rem;
 }
-
 
 
 #svgIcon svg {
@@ -507,31 +468,8 @@ header button:hover {
 .Btn:active .tooltip {
     visibility: visible;
 }
-/* From Uiverse.io by barisdogansutcu */ 
-.download-button {
-    position: relative;
-    border-width: 0;
-    color:white;
-    font-size: 15px;
-    font-weight: 600;
-    border-radius: 4px;
-    z-index: 1;
-    cursor: pointer;
-  }
-  
-  .download-button .docs {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    min-height: 40px;
-    padding: 0 10px;
-    border-radius: 4px;
-    z-index: 1;
-    background-color: #ffffff;
-    border: solid 1px white;
-    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  }
+
+
   #community h2{
     opacity: 0;
     transform: translateY(50px);
@@ -856,26 +794,9 @@ nav a {
 #token-info h2, #tokenomics h2, #roadmap h2{
     font-size:2rem ;
 }
-.Btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: white;
-    border: 2px solid black;
-    padding: 12px 1px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
-    position: relative;
-    font-family: montserrat;
-    border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%; /* Makes it more responsive */
-    max-width: 400px; /* Prevents it from getting too large */
-    text-align: center;
-    justify-content: center;
-}
+
+
+
 #svgIcon svg {
     height: 1.1em;
     width: 1.1em;
@@ -908,33 +829,26 @@ label{
     width: 60%;
     margin-left: 40%;
 }
-.download-button {
-    position: relative;
-    border-width: 0;
-    color:white;
-    font-size: 13px;
-    font-weight: 600;
-    border-radius: 4px;
-    z-index: 1;
-    cursor: pointer;
-  }
-  #liquidity-pool .text a, .solscan .text2 span{
-    font-family: Michroma;
-    color: black;
-    font-size: 1em;
-    margin-top: 20px;
- 
-  }
-  #liquidity-pool, .solscan {
-    width: 90%; /* Increase width for better mobile fit */
-    font-size: 0.9rem; /* Adjust font size for mobile */
-    padding: 0.8rem; /* Reduce padding */
+.Btn{
+    width: 400px;
+    padding:1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 10px
+    
 }
-
-
 }
 
 
 
 
 
+/* Media Query for Mobile (Small Screens) */
+@media (max-width: 480px) {
+    .Btn {
+        padding: 10px 8px; /* Slightly reduce padding */
+        font-size: 12px; /* Adjust font size */
+        max-width: 100%; /* Ensure full width */
+    }
+}
